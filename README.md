@@ -2,39 +2,59 @@
 
 ## About project
 
-This repository contains API testing projects created in Postman.
+This repository contains QA testing projects created using Postman and other testing tools.
 
-## Projects
+The purpose of this portfolio is to demonstrate experience in API testing, test documentation, database testing, and QA methodologies.
 
-### Auth API Testing
+---
 
-Covered:
+# Projects
+
+## 1. Auth API Testing
+
+### Covered:
+
 - User authentication
 - JWT token validation
 - Authorization testing
-- Negative scenarios
+- Positive and negative scenarios
 
-Tools:
+### Tools:
+
 - Postman
 - REST API
+- Swagger / OpenAPI
 
+📂 Project:
+[Auth API Testing](./Auth-API-Tests)
 
-### Petstore API Testing
+---
 
-Covered:
+## 2. Petstore API Testing
+
+### Covered:
+
 - CRUD operations
-- Data validation
+- API request validation
+- Response data validation
 - Negative testing
 - Error handling
 
-Tools:
+### Tools:
+
 - Postman
 - REST API
+- Newman
 
+📂 Project:
+[Petstore API Testing](./Petstore-API-Tests)
 
-## Skills
+---
 
-### API Testing
+# Skills
+
+## API Testing
+
 - REST API testing
 - Postman
 - Swagger / OpenAPI
@@ -44,27 +64,39 @@ Tools:
 - JWT Authentication
 - Newman reports
 
-### Test Documentation
+---
+
+## Test Documentation
+
 - Test Cases
 - Checklists
 - Bug Reports
 - Test Plans
 - Test Scenarios
 
-### Database Testing
+---
+
+## Database Testing
+
 - SQL queries
 - Data validation
 - CRUD operations
 - PostgreSQL / MySQL
 
-### Tools
+---
+
+## Tools
+
 - Git
 - GitHub
 - Jira
-- Bash
+- Bash/Linux
 - Chrome DevTools
 
-### Automation (future)
+---
+
+## Automation (Learning / Future Projects)
+
 - Java + RestAssured
 - Selenium
 - Playwright
