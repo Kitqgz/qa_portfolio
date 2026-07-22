@@ -1,0 +1,214 @@
+{
+  "info": {
+    "_postman_id": "dc5f9de3-1035-4ad5-aacd-22dcd4124119",
+    "name": "Auth-API-Tests",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "56615782",
+    "_collection_link": "https://go.postman.co/collection/56615782-dc5f9de3-1035-4ad5-aacd-22dcd4124119?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "DummyJSON",
+      "item": [
+        {
+          "name": "Позитивные проверки",
+          "item": [
+            {
+              "name": "200 Get token and save",
+              "event": [
+                {
+                  "listen": "test",
+                  "script": {
+                    "exec": [
+                      "const json = pm.response.json();\r",
+                      "\r",
+                      "pm.environment.set(\"token\", json.accessToken);"
+                    ],
+                    "type": "text/javascript",
+                    "packages": {},
+                    "requests": {}
+                  }
+                }
+              ],
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"username\": \"emilys\",\r\n    \"password\": \"emilyspass\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseURLDummy}}/auth/login",
+                  "host": [
+                    "{{baseURLDummy}}"
+                  ],
+                  "path": [
+                    "auth",
+                    "login"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "200 Защищенный запрос",
+              "event": [
+                {
+                  "listen": "test",
+                  "script": {
+                    "exec": [
+                      "pm.test(\"Status code is 200\", function () {\r",
+                      "    pm.response.to.have.status(200);\r",
+                      "});\r",
+                      "\r",
+                      "const json = pm.response.json();\r",
+                      "pm.test(\"Email корректный\", function () {\r",
+                      "    pm.expect(json.email).to.eql(\"emily.johnson@x.dummyjson.com\");;\r",
+                      "});"
+                    ],
+                    "type": "text/javascript",
+                    "packages": {},
+                    "requests": {}
+                  }
+                }
+              ],
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "{{token}}",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://dummyjson.com/auth/me",
+                  "protocol": "https",
+                  "host": [
+                    "dummyjson",
+                    "com"
+                  ],
+                  "path": [
+                    "auth",
+                    "me"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Негативные проверки",
+          "item": [
+            {
+              "name": "401 Проверка доступа с неверным Authorization Token",
+              "event": [
+                {
+                  "listen": "test",
+                  "script": {
+                    "exec": [
+                      "pm.test(\"Status code is 200\", function () {\r",
+                      "    pm.response.to.have.status(200);\r",
+                      "});\r",
+                      "\r",
+                      "const json = pm.response.json();\r",
+                      "pm.test(\"Email корректный\", function () {\r",
+                      "    pm.expect(json.email).to.eql(\"emily.johnson@x.dummyjson.com\");;\r",
+                      "});"
+                    ],
+                    "type": "text/javascript",
+                    "packages": {},
+                    "requests": {}
+                  }
+                }
+              ],
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "{{token}}",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://dummyjson.com/auth/me",
+                  "protocol": "https",
+                  "host": [
+                    "dummyjson",
+                    "com"
+                  ],
+                  "path": [
+                    "auth",
+                    "me"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "New Request",
+              "request": {
+                "method": "GET",
+                "header": []
+              },
+              "response": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseURL_Reqres",
+      "value": ""
+    },
+    {
+      "key": "baseURLDummy",
+      "value": ""
+    },
+    {
+      "key": "baseUrl",
+      "value": ""
+    }
+  ]
+}
