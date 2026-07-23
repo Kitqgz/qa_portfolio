@@ -1,4 +1,4 @@
-# QA API Testing Portfolio
+# QA Portfolio
 
 ## About project
 
