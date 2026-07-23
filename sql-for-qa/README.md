@@ -107,19 +107,22 @@ products
 ## Структура проекта
 sql-for-qa
 
+```text
+sql-for-qa
+├── README.md
+│
 ├── database
-│ └── qa_store.sql
+│   └── qa_store.sql
 │
 ├── lessons
-│ ├── 01_select.sql
-│ ├── 02_where.sql
-│ ├── 03_like.sql
-│ ├── 04_in_between.sql
-│ ├── 05_aggregate_functions.sql
-│ ├── 06_group_by.sql
-│ └── 07_joins.sql
-│
-└── README.md
+│   ├── 01_select.sql
+│   ├── 02_where.sql
+│   ├── 03_like.sql
+│   ├── 04_in_between.sql
+│   ├── 05_aggregate_functions.sql
+│   ├── 06_group_by.sql
+│   └── 07_joins.sql
+```
 
 ## Как запустить
 1. Установите MySQL
