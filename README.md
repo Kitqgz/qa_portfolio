@@ -1,124 +1,74 @@
 # QA Portfolio
 
-## About project
+Здравствуйте! Меня зовут Валерия.
+Hi! My name is Valeria. Welcome to my QA Portfolio!
 
-This repository contains QA testing projects created using Postman and other testing tools.
+Это мое портфолио, в котором собраны практические проекты по ручному тестированию веб-приложений и API.
+This is my portfolio, featuring practical projects involving the manual testing of web applications and APIs.
 
-The purpose of this portfolio is to demonstrate experience in API testing, test documentation, database testing, and QA methodologies.
+## 🧰 Tech Stack
+- Manual Testing
+- Postman
+- Swagger
+- SQL (PostgreSQL)
+- Chrome DevTools
+- Git
+- Bash
+- Jira
+- TestIT
+
+## 📂 Проекты/Projects
+
+### 🌐 Web Testing
+
+| Проект | Описание |
+|--------|----------|
+| [Swag Labs Testing Project](./web-testing/swag-labs) | Полный цикл тестирования веб-приложения: Test Plan, Checklist, Test Cases, Bug Reports и Test Summary Report. |
 
 ---
 
-# Projects
+### 🔗 API Testing
 
-## 1. Auth API Testing
+| Проект | Описание |
+|--------|----------|
+| [Auth API Tests](./api-testing/Auth-API-Tests) | Тестирование авторизации через Postman. |
+| [Petstore API Tests](./api-testing/Petstore-API-Tests) | Тестирование REST API Petstore с использованием Postman. |
 
-### Covered:
+---
 
-- User authentication
-- JWT token validation
-- Authorization testing
-- Positive and negative scenarios
+### 🗄 SQL
 
-### Tools:
+| Проект | Описание |
+|--------|----------|
+| [SQL for QA](./sql-for-qa) | Практические SQL-запросы для тестирования баз данных. |
+
+---
+
+## 🛠 Используемые инструменты/Tools used
 
 - Postman
-- REST API
-- Swagger / OpenAPI
-
-📂 Project:
-[Auth API Testing](./Auth-API-Tests)
-
----
-
-## 2. Petstore API Testing
-
-### Covered:
-
-- CRUD operations
-- API request validation
-- Response data validation
-- Negative testing
-- Error handling
-
-### Tools:
-
-- Postman
-- REST API
-- Newman
-
-📂 Project:
-[Petstore API Testing](./Petstore-API-Tests)
-
----
-
-# Skills
-
-## API Testing
-
-- REST API testing
-- Postman
-- Swagger / OpenAPI
-- JSON validation
-- HTTP methods
-- Status code validation
-- JWT Authentication
-- Newman reports
-
----
-
-### SQL
-
-- SELECT
-- WHERE
-- ORDER BY
-- LIKE
-- IN
-- BETWEEN
-- Aggregate Functions
-- GROUP BY
-- INNER JOIN
-- LEFT JOIN
-- RIGHT JOIN
-  
----
-
-## Test Documentation
-
-- Test Cases
-- Checklists
-- Bug Reports
-- Test Plans
-- Test Scenarios
-
----
-
-## Database Testing
-
-- SQL queries
-- PostgreSQL / MySQL
-- Data validation
-- CRUD verification
-- Data integrity checks
-- Foreign key validation
-- Test case creation
-- Bug reporting
-
----
-
-## Tools
-
+- Swagger
+- Chrome DevTools
+- SQL
+- PostgreSQL
 - Git
 - GitHub
 - Jira
-- Bash/Linux
-- Chrome DevTools
-- MySQL
-- MySQL Workbench
+- TestIT
+- Bash
 
 ---
 
-## Automation (Learning / Future Projects)
+## 📌 Навыки/Skills
 
-- Java + RestAssured
-- Selenium
-- Playwright
+- Manual Testing
+- Functional Testing
+- Regression Testing
+- API Testing
+- SQL
+- Test Design
+- Writing Test Cases
+- Writing Checklists
+- Writing Bug Reports
+- REST API
+- HTTP
