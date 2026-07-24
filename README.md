@@ -6,7 +6,7 @@ Hi! My name is Valeria. Welcome to my QA Portfolio!
 Это мое портфолио, в котором собраны практические проекты по ручному тестированию веб-приложений и API.
 This is my portfolio, featuring practical projects involving the manual testing of web applications and APIs.
 
-## 🧰 Tech Stack
+## Tech Stack
 - Manual Testing
 - Postman
 - Swagger
@@ -59,7 +59,7 @@ This is my portfolio, featuring practical projects involving the manual testing 
 
 ---
 
-## 📌 Навыки/Skills
+## Навыки/Skills
 
 - Manual Testing
 - Functional Testing
