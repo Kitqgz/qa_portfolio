@@ -32,7 +32,7 @@ This is my portfolio, featuring practical projects involving the manual testing 
 | Проект | Описание |
 |--------|----------|
 | [Auth API Tests](./Auth-API-Tests) | Тестирование авторизации через Postman. |
-| [Petstore API Tests]([./Petstore-API-Tests)) | Тестирование REST API Petstore с использованием Postman. |
+| [Petstore API Tests](./Petstore-API-Tests) | Тестирование REST API Petstore с использованием Postman. |
 
 ---
 
